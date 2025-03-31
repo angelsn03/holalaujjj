@@ -1,0 +1,51 @@
+/* Estilos para centrar todo el contenido */
+body {
+    animation: fadeIn 1s ease-in-out;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background:linear-gradient(1deg, #25192c, #341919);
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('josuke.png') no-repeat center center/cover;
+    opacity: 0.2; 
+    z-index: -1;
+}
+
+h1 {
+    color: rgb(255, 235, 241);
+    text-shadow: #1c1019 0.1em 0.1em 0.2em;
+    font-size: 2em;
+    font-style: normal;
+    font-family: 'Algerian','Jost', sans-serif;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); }
+}
+
+.txt {
+    color: rgb(255, 235, 241);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    text-shadow: #1c1019 0.5em 0.5em 0.2em;
+    font-size: 1em;
+    font-family: 'Jost', sans-serif;
+    animation: slideUp 1s ease-in-out;
+}
